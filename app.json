@@ -25,15 +25,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "@config-plugins/react-native-google-cast",
-        {
-          "iosReceiverAppId": "CC1AD845",
-          "androidReceiverAppId": "CC1AD845"
-        }
-      ]
-    ]
+    }
   }
 }

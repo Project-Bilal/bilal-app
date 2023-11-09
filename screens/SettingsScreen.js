@@ -1,10 +1,10 @@
 import { Text, View } from "react-native";
 import React from "react";
 
-export default function AboutScreen({ navigation }) {
+export default function SettingsScreen({ navigation }) {
   return (
     <View>
-      <Text>About Screen</Text>
+      <Text>Settings Screen</Text>
     </View>
   );
 }
