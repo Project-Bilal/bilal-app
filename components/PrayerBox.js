@@ -7,7 +7,8 @@ export default function PrayerBox({ title, description, icon, nav }) {
   const navigate = useNavigation();
   return (
     <Pressable
-      p="$5"
+      px="$5"
+      py="$2"
       width="$2/5"
       rounded="$xl"
       bg="$white"

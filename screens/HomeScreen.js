@@ -60,54 +60,53 @@ export default function HomeScreen({ navigation }) {
           </Text>
         </Center>
 
-        <Box py="$3">
-          <VStack justifyContent="space-around" space="2xl">
-            <HStack justifyContent="center" alignItems="space-around" space="xl">
-              <PrayerBox
-                title={PrayerNames.F}
-                icon={PrayerIcons.F}
-                description="5:33 AM"
-                nav="PrayerSettings"
-              />
-              <PrayerBox
-                title={PrayerNames.S}
-                icon={PrayerIcons.S}
-                description="7:01 AM"
-                nav="PrayerSettings"
-              />
-            </HStack>
-            <HStack justifyContent="center" alignItems="space-around" space="xl">
-              <PrayerBox
-                title={PrayerNames.D}
-                icon={PrayerIcons.D}
-                description="11:54 AM"
-                nav="PrayerSettings"
-              />
-              <PrayerBox
-                title={PrayerNames.A}
-                icon={PrayerIcons.A}
-                description="2:18 PM"
-                nav="PrayerSettings"
-              />
-            </HStack>
-            <HStack justifyContent="center" alignItems="space-around" space="xl">
-              <PrayerBox
-                title={PrayerNames.M}
-                icon={PrayerIcons.M}
-                description="4:44 PM"
-                nav="PrayerSettings"
-              />
-              <PrayerBox
-                title={PrayerNames.I}
-                icon={PrayerIcons.I}
-                description="6:11 PM"
-                nav="PrayerSettings"
-              />
-            </HStack>
-          </VStack>
-        </Box>
+        <VStack justifyContent="space-around" space="2xl" py="$4">
+          <HStack justifyContent="center" alignItems="space-around" space="xl">
+            <PrayerBox
+              title={PrayerNames.F}
+              icon={PrayerIcons.F}
+              description="5:33 AM"
+              nav="PrayerSettings"
+            />
+            <PrayerBox
+              title={PrayerNames.S}
+              icon={PrayerIcons.S}
+              description="7:01 AM"
+              nav="PrayerSettings"
+            />
+          </HStack>
+          <HStack justifyContent="center" alignItems="space-around" space="xl">
+            <PrayerBox
+              title={PrayerNames.D}
+              icon={PrayerIcons.D}
+              description="11:54 AM"
+              nav="PrayerSettings"
+            />
+            <PrayerBox
+              title={PrayerNames.A}
+              icon={PrayerIcons.A}
+              description="2:18 PM"
+              nav="PrayerSettings"
+            />
+          </HStack>
+          <HStack justifyContent="center" alignItems="space-around" space="xl">
+            <PrayerBox
+              title={PrayerNames.M}
+              icon={PrayerIcons.M}
+              description="4:44 PM"
+              nav="PrayerSettings"
+            />
+            <PrayerBox
+              title={PrayerNames.I}
+              icon={PrayerIcons.I}
+              description="6:11 PM"
+              nav="PrayerSettings"
+            />
+          </HStack>
+        </VStack>
+
         {/* <Divider /> */}
-        <HStack justifyContent="center" py="$5">
+        <HStack justifyContent="center" py="$3">
           <Pressable
             width="$5/6"
             rounded="$xl"
@@ -133,7 +132,7 @@ export default function HomeScreen({ navigation }) {
             </HStack>
           </VStack>
         </Box>
-        <VStack p="$3" justifyContent="flex-start">
+        <VStack px="$7" py="$2" justifyContent="flex-start">
           <Pressable onPress={() => navigation.navigate("Location")}>
             <HStack>
               <Icons name="navigation-variant" size={24} color="#737373" />
