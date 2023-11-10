@@ -36,7 +36,7 @@ export default function PrayerSettingsScreen({ route, navigation }) {
       </Box>
       <VStack py="$5">
         <Text fontFamily="Inter-Black">Athan</Text>
-        <Pressable onPress={() => navigation.navigate("AudioLibrary")}>
+        <Pressable onPress={() => navigation.navigate("AudioLibrary", { presentation: "modal" })}>
           <Box borderRadius="$xl" py="$5" bg="$white">
             <Center>
               <Text fontFamily="Inter-Regular">Select Athan</Text>

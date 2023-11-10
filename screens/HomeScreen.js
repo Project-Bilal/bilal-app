@@ -1,24 +1,14 @@
 import { useCallback } from "react";
 import { SafeAreaView, View } from "react-native";
 import React from "react";
-import {
-  Box,
-  Divider,
-  GluestackUIProvider,
-  Center,
-  VStack,
-  HStack,
-  Text,
-  Pressable,
-  Icon,
-  EyeIcon,
-} from "@gluestack-ui/themed";
+import { Box, GluestackUIProvider, Center, VStack, HStack, Text, Pressable } from "@gluestack-ui/themed";
 import { config } from "@gluestack-ui/config";
 import PrayerBox from "../components/PrayerBox";
 import { useFonts } from "expo-font";
 import { PrayerNames, PrayerIcons } from "../utils/constants";
 import { getHijriDate } from "../utils/HijriDate";
 import Icons from "@expo/vector-icons/MaterialCommunityIcons";
+import { StatusBar } from "expo-status-bar";
 
 import * as SplashScreen from "expo-splash-screen";
 
@@ -43,6 +33,7 @@ export default function HomeScreen({ navigation }) {
   }
   return (
     <SafeAreaView onLayout={onLayoutRootView}>
+      <StatusBar />
       <GluestackUIProvider config={config}>
         <HStack flexDirection="row" alignItems="center">
           <Box flex={3} justifyContent="center" alignItems="center"></Box>

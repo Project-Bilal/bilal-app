@@ -18,7 +18,7 @@ export default function AudioLibraryScreen() {
   async function playSound(value) {
     setPlaying(value);
     const source = {
-      uri: `https://storage.googleapis.com/athans/${value}`,
+      uri: `${process.env.EXPO_PUBLIC_GET_ATHAN_MP3_URL}${value}`,
     };
     const { sound } = await Audio.Sound.createAsync(source, null, resetPlaying);
     setSound(sound);
@@ -52,7 +52,7 @@ export default function AudioLibraryScreen() {
   useFocusEffect(
     React.useCallback(() => {
       const source = axios.CancelToken.source();
-      const url = "https://us-central1-project-bilal-338505.cloudfunctions.net/get-athans";
+      const url = process.env.EXPO_PUBLIC_GET_ATHANS_LIST_URL;
       const fetchAthans = async () => {
         try {
           const response = await axios.get(url, { cancelToken: source.token });

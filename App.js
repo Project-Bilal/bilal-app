@@ -31,6 +31,7 @@ export default function Navigation() {
         <Stack.Screen
           name="AudioLibrary"
           component={AudioLibraryScreen}
+          mode="modal"
           options={({ route, navigation }) => ({
             presentation: "modal",
             headerShown: false,

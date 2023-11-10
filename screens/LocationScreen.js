@@ -2,7 +2,7 @@ import { Box } from "@gluestack-ui/themed";
 import React, { useState } from "react";
 import { View, TextInput, Text, Button } from "react-native";
 import Geocoder from "react-native-geocoding";
-import { MapPin } from "lucide-react-native";
+import Constants from "expo-constants";
 export default function LocationScreen({ navigation }) {
   Geocoder.init(process.env.EXPO_PUBLIC_GOOGLE_API_KEY);
   const [address, setAddress] = useState("");
