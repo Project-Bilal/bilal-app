@@ -11,6 +11,7 @@ import Icons from "@expo/vector-icons/MaterialCommunityIcons";
 import { StatusBar } from "expo-status-bar";
 
 import * as SplashScreen from "expo-splash-screen";
+//comment
 
 SplashScreen.preventAutoHideAsync();
 
