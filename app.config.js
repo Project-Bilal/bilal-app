@@ -16,10 +16,14 @@ export default {
       supportsTablet: true,
       bundleIdentifier: "com.projectbilal.app",
       infoPlist: {
-        NSLocationWhenInUseUsageDescription: "Location to determine prayer times.",
-        NSLocationAlwaysAndWhenInUseUsageDescription: "Location to determine prayer times.",
+        NSLocationWhenInUseUsageDescription:
+          "Location to determine prayer times.",
+        NSLocationAlwaysAndWhenInUseUsageDescription:
+          "Location to determine prayer times.",
         NSLocationAlwaysUsageDescription: "Location to determine prayer times.",
         NSAllowsArbitraryLoads: true,
+        NSBluetoothAlwaysUsageDescription:
+          "This app uses Bluetooth to connect to devices.",
       },
     },
     android: {
